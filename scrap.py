@@ -1,5 +1,5 @@
 import requests
-from config import SmsConfig, tmdbConfig
+from config import SmsConfig, TmdbConfig
 import json
 
 
@@ -37,7 +37,7 @@ def send_sms(message):
 
 def main():
     # Remplacez 'VOTRE_CLE_API' par votre clé d'API TMDb
-    api_key = tmdbConfig.TMDB_API_KEY
+    api_key = TmdbConfig.TMDB_API_KEY
 
     # Obtenir les nouveaux films
     new_movies = get_top_rated_movies(api_key)
