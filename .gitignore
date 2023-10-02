@@ -2,3 +2,4 @@ config.py
 new_top_rated_movies.json
 /.idea
 __pycache__/
+run_script.bat
