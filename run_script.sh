@@ -1,6 +1,6 @@
 git clone https://github.com/ilan990/Tmdb.git
 ls
-cd Tmbd
+cd Tmdb
 python script.py
 git add .
 git commit -m "MAJ automatique"
