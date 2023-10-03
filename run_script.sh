@@ -1,4 +1,5 @@
 git clone https://github.com/ilan990/Tmdb.git
+ls
 cd Tmbd
 python script.py
 git add .
