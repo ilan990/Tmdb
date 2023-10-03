@@ -65,7 +65,8 @@ def main():
 
     # Enregistrer les nouveaux films dans un fichier JSON
     save_movies_to_json(new_movies, 'top_rated_movies.json')
-
+    message = f"Coucou c'est IlanGPT, il y a du nouveau dans le top des films: {', '.join(new_movie_titles)}"
+    send_sms(message)
 
 if __name__ == '__main__':
     main()
