@@ -1,4 +1,3 @@
-cd Chemin/vers/votre/projet
 git pull origin master
 python script.py
 git add .
