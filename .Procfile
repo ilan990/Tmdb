@@ -1,1 +1,1 @@
-web: bash run_script.bat
+web: bash run_script.sh
