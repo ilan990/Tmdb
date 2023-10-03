@@ -1,7 +1,7 @@
 import os
 
 import requests
-from config import SmsConfig, TmdbConfig
+#from config import SmsConfig, TmdbConfig
 import json
 
 
