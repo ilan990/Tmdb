@@ -1,3 +1,5 @@
+import os
+
 import requests
 from config import SmsConfig, TmdbConfig
 import json
@@ -26,7 +28,7 @@ def load_movies_from_json(filename):
 
 def send_sms(message):
     try:
-        response = requests.get(SmsConfig.URL + f'user={SmsConfig.USER}&pass={SmsConfig.FREE_API_KEY}&msg={message}')
+        response = requests.get(os.environ.get('URL') + f'user={os.environ.get("FREE_USER")}&pass={os.environ.get("FREE_API_KEY")}&msg={message}')
         if response.status_code == 200:
             print('Le message a bien été envoyé')
         else:
@@ -37,7 +39,7 @@ def send_sms(message):
 
 def main():
     # Remplacez 'VOTRE_CLE_API' par votre clé d'API TMDb
-    api_key = TmdbConfig.TMDB_API_KEY
+    api_key = os.environ.get('TMDB_API_KEY')
 
     # Obtenir les nouveaux films
     new_movies = get_top_rated_movies(api_key)
