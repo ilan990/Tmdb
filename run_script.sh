@@ -3,6 +3,7 @@ cd Tmdb
 ls -a
 git remote remove origin
 git remote add origin $GIT_TOKEN_URL
+nano top_rated_movies.json
 ls -a
 python script.py
 git config --global user.email "$GIT_MAIL"
