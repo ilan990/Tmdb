@@ -1,7 +1,0 @@
-class SmsConfig:
-    URL = 'https://smsapi.free-mobile.fr/sendmsg?'
-    USER = 'VOTRE_USER_FREE'
-    FREE_API_KEY = 'VOTRE_CLE_API'
-
-class tmdbConfig:
-    TMDB_API_KEY = 'VOTRE_CLE_API'
