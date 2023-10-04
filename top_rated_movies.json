@@ -1,4 +1,5 @@
 [
+<<<<<<< Updated upstream
     {
         "adult": false,
         "backdrop_path": "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
@@ -37,6 +38,10 @@
         "vote_average": 8.7,
         "vote_count": 24673
     },
+=======
+    
+
+>>>>>>> Stashed changes
     {
         "adult": false,
         "backdrop_path": "/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
