@@ -20,8 +20,10 @@ def save_movies_to_json(movies, filename):
 
 
 def load_movies_from_json(filename):
+    print(f"Lecture du fichier JSON '{filename}'")
     with open(filename, 'r', encoding='utf-8') as json_file:
         data = json.load(json_file)
+    print("Lecture terminée avec succès.")
     return data
 
 
