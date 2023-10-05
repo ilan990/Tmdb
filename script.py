@@ -1,6 +1,11 @@
 import os
 import requests
 import json
+from dotenv import load_dotenv
+
+# Chargez les variables d'environnement à partir du fichier .env
+load_dotenv()
+from datetime import datetime
 
 
 def get_top_rated_movies(api_key, num_pages=20):
